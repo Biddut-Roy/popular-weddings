@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "Location_name": "Seaside Romance",
+      "Details": "A picturesque beachfront venue with breathtaking views of the ocean.",
+      "photo": "https://i.ibb.co/XXWRQH6/Seaside-Romance-w.jpg",
+      "prices": {
+        "starting_price": 5000,
+        "maximum_capacity": 200
+      },
+      "feature": [
+        "Beachfront ceremony",
+        "Elegant ballroom reception",
+        "On-site catering",
+        "Dedicated wedding planner"
+      ]
+    },
+    {
+      "id": 2,
+      "Location_name": "Enchanted Gardens",
+      "Details": "A magical garden setting with lush greenery and blooming flowers.",
+      "photo": "https://i.ibb.co/St9xyYP/Enchanted-Gardens-w.jpg",
+      "prices": {
+        "starting_price": 3500,
+        "maximum_capacity": 150
+      },
+      "feature": [
+        "Outdoor ceremony space",
+        "Gazebo for vows",
+        "Fairy lights",
+        "Open-air dining"
+      ]
+    },
+    {
+      "id": 3,
+      "Location_name": "Historic Manor",
+      "Details": "A grand historic manor with ornate architecture and vintage charm.",
+      "photo": "https://i.ibb.co/hd7CGB0/Historic-Manor-w.jpg",
+      "prices": {
+        "starting_price": 6000,
+        "maximum_capacity": 250
+      },
+      "feature": [
+        "Manicured gardens",
+        "Antique interiors",
+        "Indoor and outdoor options",
+        "Full-service bar"
+      ]
+    },
+    {
+      "id": 4,
+      "Location_name": "Rustic Barn Retreat",
+      "Details": "A rustic barn surrounded by rolling hills and rustic beauty.",
+      "photo": "https://i.ibb.co/5hGBzrw/Rustic-Barn-Retreat-w.jpg",
+      "prices": {
+        "starting_price": 3000,
+        "maximum_capacity": 100
+      },
+      "feature": [
+        "Barn ceremony space",
+        "Rustic decor",
+        "Outdoor bonfire",
+        "Farm-to-table cuisine"
+      ]
+    },
+    {
+      "id": 5,
+      "Location_name": "Urban Chic Loft",
+      "Details": "A trendy urban loft in the heart of the city with modern industrial vibes.",
+      "photo": "https://i.ibb.co/kDZf51Z/Urban-Chic-Loft-w.jpg",
+      "prices": {
+        "starting_price": 4500,
+        "maximum_capacity": 150
+      },
+      "feature": [
+        "Exposed brick walls",
+        "Skyline views",
+        "Contemporary design",
+        "Customizable space"
+      ]
+    },
+    {
+      "id": 6,
+      "Location_name": "Mountain Lodge Elegance",
+      "Details": "A luxurious mountain lodge with a cozy and elegant ambiance.",
+      "photo": "https://i.ibb.co/0BbB2nH/Mountain-Lodge-Elegance-w.jpg",
+      "prices": {
+        "starting_price": 5500,
+        "maximum_capacity": 200
+      },
+      "feature": [
+        "Mountain backdrop",
+        "Fireplace ceremony",
+        "Log cabin reception",
+        "Gourmet dining"
+      ]
+    }
+  ]
+  
