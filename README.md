@@ -1,8 +1,11 @@
-# React + Vite
+# Popular Wedding Event Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Link:
 
-Currently, two official plugins are available:
+## Popular Wedding website features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Home page has wedding venue and short details.
+- The home page has some photos of the newlyweds.
+- There are three places for honeymoon package.
+- There is a food page for what food you can order for weddings
+- And there is a wedding card page for what kind of card you want to give on your wedding invitation

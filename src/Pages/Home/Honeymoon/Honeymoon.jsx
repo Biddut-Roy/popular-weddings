@@ -35,7 +35,7 @@ const Honeymoon = () => {
                   <div className="card-actions justify-end">
                     <p>Location: {item.location}</p>
                   </div>
-                  <p className=" text-xl font-semibold text-blue-500">Contact by Social Media</p>
+                  <p className=" text-xl font-semibold text-blue-500">Contact Our Social Media</p>
                 </div>
               </div>
             </div>

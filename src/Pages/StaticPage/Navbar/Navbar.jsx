@@ -55,7 +55,7 @@ const Navbar = () => {
          <p>{user&& user.displayName}</p>
     </div>
     <div className=" w-10 h-10  ">
-         <img className=" rounded-full" src={user? user.photoURL:"https://i.ibb.co/mTk3cfk/P.png"} alt="profile-img" />
+         <img className=" rounded-full" src={user? user.photoURL:`https://i.ibb.co/mTk3cfk/P.png`} alt="" />
     </div>
     {
       user?
