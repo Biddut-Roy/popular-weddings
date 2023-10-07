@@ -8,6 +8,7 @@ import Favorite from "../Favorite/Favorite";
 import Private from "../PrivateRoute/Private";
 import WeddingCard from "../Pages/WeddingCard/WeddingCard";
 import Food from "../Pages/Food/Food";
+import Errorpage from "../Errorpage/Errorpage";
 
 
 
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Root></Root> ,
-        errorElement: <div>Oops! There was an error.</div>,
+        errorElement: <Errorpage></Errorpage>,
         children: [
           {
             path: "/",
