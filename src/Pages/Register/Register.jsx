@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link} from "react-router-dom";
 import swal from 'sweetalert';
 import { globalContext } from "../../Context/GlobalContex";
 import { FcGoogle } from 'react-icons/Fc';
@@ -7,12 +7,24 @@ import { FcGoogle } from 'react-icons/Fc';
 
 const Register = () => {
   const {signUp , signInGoogle} = useContext(globalContext)
+  const [error , setError]= useState()
 
   const handelSignUp =(e)=>{
     e.preventDefault();
     const form = new FormData(e.currentTarget)
     const email = form.get('email')
     const password = form.get('password')
+
+    
+    if (!/(?=.*[A-Z])(?=.*[- ?!@#$%^&*\/\\]){6-16}$/.test(password)) {
+        setError("mast 1 special characters and capital letters")
+      return;
+  }
+  
+
+
+  
+
       
     signUp(email , password)
     .then((result) => {
@@ -78,12 +90,12 @@ const Register = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <input type="submit" className="btn btn-primary" value="Login" />
+          <input type="submit" className="btn btn-primary" value="Register" />
         </div>
       </form>
             <div onClick={handelGoogle} className=" mx-auto mb-1"><FcGoogle className=" w-16 h-16" /></div>
             <div>
-        <a href="#" className="label-text-alt link link-hover mx-5">Already have an account?<span className=" font-semibold text-xl  text-green-600"><Link to={"/login"}>Login</Link></span></a>
+        <p className="label-text-alt link link-hover mx-5">Already have an account?<span className=" font-semibold text-xl  text-green-600"><Link to={"/login"}>Login</Link></span></p>
       </div>
           </div>
         </div>

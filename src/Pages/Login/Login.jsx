@@ -88,7 +88,7 @@ const Login = () => {
       </form>
       <div onClick={handelGoogle} className=" mx-auto mb-1"><FcGoogle className=" w-16 h-16" /></div>
       <div>
-        <a href="#" className="label-text-alt link link-hover mx-5">Don't have an account?<span className=" font-semibold text-xl  text-green-600"><Link to={"/register"}>Register</Link></span></a>
+        <p href="#" className="label-text-alt link link-hover mx-5">Don't have an account?<span className=" font-semibold text-xl  text-green-600"><Link to={"/register"}>Register</Link></span></p>
       </div>
     </div>
   </div>
