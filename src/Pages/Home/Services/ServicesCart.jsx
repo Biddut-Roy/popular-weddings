@@ -44,7 +44,7 @@ const ServicesCart = () => {
               {findServices.Details}
             </h4>
             <h4 className="mb-2 block font-sans text-xl font-normal leading-snug tracking-normal text-blue-gray-900 antialiased">
-              {findServices.feature.map(feature => <li>{feature}</li>)}
+              {findServices.feature.map((feature , idx )=> <li key={idx}>{feature}</li>)}
             </h4>
             <h4 className="mb-2 block font-sans text-xl font-normal leading-snug tracking-normal text-blue-gray-900 antialiased">
               <p>starting_price: ${starting_price}</p>

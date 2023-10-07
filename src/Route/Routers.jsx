@@ -35,7 +35,6 @@ const router = createBrowserRouter([
           {
             path: "/favorite",
             element: <Favorite></Favorite>,
-            loader:()=> fetch("/weddings.json")
           },
 
         ]
