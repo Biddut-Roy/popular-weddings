@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { globalContext } from "../../Context/GlobalContex";
 import swal from 'sweetalert';
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/Fc';
 
 
@@ -9,7 +9,9 @@ import { FcGoogle } from 'react-icons/Fc';
 const Login = () => {
 
   const { signIn ,signInGoogle }= useContext(globalContext)
-  
+  const location = useLocation();
+  const navigate = useNavigate();
+  console.log(location);
 
   const handelLogin = (e)=>{
 
@@ -22,11 +24,13 @@ const Login = () => {
             .then((result) => {
               swal({
                 title: "Log in success!",
-                text: " ",
+                text: "",
                 icon: "success",
                 button: "Ok",
               });
-              console.log(result.user);
+              console.log(result);
+              navigate(location?.state? location.state : "/" )
+        
             })
             .catch((error) => {
               swal({
@@ -47,6 +51,7 @@ const Login = () => {
         icon: "success",
         button: "Ok",
       });
+      navigate(location?.state? location.state : "/" )
       console.log(result.user);
     })
     .catch((error) => {
@@ -88,7 +93,7 @@ const Login = () => {
       </form>
       <div onClick={handelGoogle} className=" mx-auto mb-1"><FcGoogle className=" w-16 h-16" /></div>
       <div>
-        <p href="#" className="label-text-alt link link-hover mx-5">Don't have an account?<span className=" font-semibold text-xl  text-green-600"><Link to={"/register"}>Register</Link></span></p>
+        <p href="#" className="label-text-alt link link-hover mx-5">Do not have an account?<span className=" font-semibold text-xl  text-green-600"><Link to={"/register"}>Register</Link></span></p>
       </div>
     </div>
   </div>

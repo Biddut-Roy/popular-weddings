@@ -1,6 +1,18 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { globalContext } from "../../../Context/GlobalContex";
 
 const Navbar = () => {
+  const { user , logOut } = useContext(globalContext)
+
+  const handelOut = ()=>{
+    logOut()
+    .then(() => {
+      // Sign-out successful.
+    }).catch((error) => {
+      // An error happened.
+    });
+  }
 
     const list = <>
     
@@ -32,7 +44,12 @@ const Navbar = () => {
     <div className=" w-10 h-10 rounded-full border-2 border-red-800 ">
          <img src="https://i.ibb.co/mTk3cfk/P.png" alt="profile-img" />
     </div>
-    <NavLink to={"/login"}><button className=" btn btn-neutral">Login</button></NavLink>
+    {
+      user?
+      <NavLink ><button onClick={handelOut} className=" btn btn-neutral">Log out</button></NavLink>
+      :
+      <NavLink to={"/login"}><button className=" btn btn-neutral">Login</button></NavLink>
+    }
   </div>
 </div>
     );

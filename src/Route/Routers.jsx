@@ -5,6 +5,9 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import ServicesCart from "../Pages/Home/Services/ServicesCart";
 import Favorite from "../Favorite/Favorite";
+import Private from "../PrivateRoute/Private";
+import WeddingCard from "../Pages/WeddingCard/WeddingCard";
+import Food from "../Pages/Food/Food";
 
 
 
@@ -34,7 +37,17 @@ const router = createBrowserRouter([
           },
           {
             path: "/favorite",
-            element: <Favorite></Favorite>,
+            element: <Private><Favorite></Favorite></Private>,
+          },
+          {
+            path: "/food",
+            element: <Private><Food></Food></Private>,
+            loader:()=> fetch("/Food.json")
+          },
+          {
+            path: "/card",
+            element:<Private><WeddingCard></WeddingCard></Private>,
+            loader:()=> fetch("/weddingCard.json")
           },
 
         ]

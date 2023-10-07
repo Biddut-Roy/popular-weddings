@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "card_name": "Elegant Rose Gold Invitation",
+      "price": 3.99,
+      "minimum_order": 50,
+      "img": "https://i.ibb.co/g3vqJYS/71-Wy-Jsh-VG-L-AC-UF1000-1000-QL80.jpg"
+    },
+    {
+      "id": 2,
+      "card_name": "Vintage Lace Wedding Card",
+      "price": 2.49,
+      "minimum_order": 100,
+      "img": "https://i.ibb.co/qmKR37H/91md-G6-b7-L-AC-UF1000-1000-QL80.jpg"
+    },
+    {
+      "id": 3,
+      "card_name": "Modern Minimalist Wedding Invitation",
+      "price": 4.99,
+      "minimum_order": 25,
+      "img": "https://i.ibb.co/tPJgYPL/laser-cutting-wedding-card-designs-jimitcard.jpg"
+    },
+    {
+      "id": 4,
+      "card_name": "Rustic Floral Wedding Invite",
+      "price": 3.25,
+      "minimum_order": 75,
+      "img": "https://i.ibb.co/Z1vpLLb/ww.jpg"
+    }
+  ]
+  

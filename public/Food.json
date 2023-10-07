@@ -1,0 +1,33 @@
+
+ [
+      {
+        "name": "Carrot",
+        "type": "Vegetable",
+        "dishes": ["Salad", "Stir-fry", "Soup"],
+        "itemList": ["Potato", "Broccoli", "Celery"],
+        "price": 1.99
+      },
+      {
+        "name": "Chicken",
+        "type": "Non-Vegetable",
+        "dishes": ["Grilled Chicken", "Chicken Curry", "Fried Chicken"],
+        "itemList": ["Turkey", "Meet", "Pork"],
+        "price": 4.99
+      },
+      {
+        "name": "Spinach",
+        "type": "Vegetable",
+        "dishes": ["Spinach Salad", "Creamed Spinach", "Spinach Quiche"],
+        "itemList": ["Kale", "Lettuce", "Chard"],
+        "price": 2.49
+      },
+      {
+        "name": "Meet",
+        "type": "Non-Vegetable",
+        "dishes": ["Meet Steak", "Meet Stroganoff", "Meet Tacos"],
+        "itemList": ["Chicken", "Pork", "Lamb"],
+        "price": 7.99
+      }
+    ]
+  
+  
