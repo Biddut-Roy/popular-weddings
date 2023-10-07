@@ -12,7 +12,7 @@ const Home = () => {
                 <Banner></Banner>
             </div>
             <div className=" my-10">
-                              <h1 className=" font-bold text-center lg:text-4xl">Our Marriages  Services</h1>
+                              <h1 className=" font-bold text-center lg:text-4xl">Our Wedding Services</h1>
             </div>
             <div className="grid grid-cols-1  md: grid-cols-2 lg:grid-cols-2 w-2/3 mx-auto gap-10 my-10">
                 
