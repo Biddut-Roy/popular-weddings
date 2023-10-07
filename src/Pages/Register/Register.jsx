@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link} from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import swal from 'sweetalert';
 import { globalContext } from "../../Context/GlobalContex";
 import { FcGoogle } from 'react-icons/Fc';
@@ -8,33 +8,38 @@ import { FcGoogle } from 'react-icons/Fc';
 const Register = () => {
   const {signUp , signInGoogle} = useContext(globalContext)
   const [error , setError]= useState()
+  const navigate = useNavigate();
 
   const handelSignUp =(e)=>{
     e.preventDefault();
     const form = new FormData(e.currentTarget)
     const email = form.get('email')
     const password = form.get('password')
-
+    setError(" ");
     
-    if (!/(?=.*[A-Z])(?=.*[- ?!@#$%^&*\/\\]){6-16}$/.test(password)) {
-        setError("mast 1 special characters and capital letters")
+    if (password.length < 6) {
+      setError('Password must be at least 6 characters long.')
+      return;
+  }
+    if (!/[A-Z]/.test(password)) {
+      setError("Password must be 1 Uppercase latter")
+      return;
+  }
+    if (!/[$&+,:;=?@#|'<>.^*()%!-]/.test(password)) {
+      setError("Password must Special character")
       return;
   }
   
-
-
-  
-
-      
     signUp(email , password)
-    .then((result) => {
+    .then(() => {
       swal({
         title: "Log in success!",
         text: " ",
         icon: "success",
         button: "Ok",
       });
-      console.log(result.user);
+      navigate("/")
+
     })
     .catch((error) => {
       swal({
@@ -91,6 +96,9 @@ const Register = () => {
         </div>
         <div className="form-control mt-6">
           <input type="submit" className="btn btn-primary" value="Register" />
+        </div>
+        <div className=" text-center text-red-700 font-medium text-xl">
+          <p>{error}</p>
         </div>
       </form>
             <div onClick={handelGoogle} className=" mx-auto mb-1"><FcGoogle className=" w-16 h-16" /></div>

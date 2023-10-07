@@ -1,6 +1,9 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { globalContext } from "../../../Context/GlobalContex";
+import swal from 'sweetalert';
+
+
 
 const Navbar = () => {
   const { user , logOut } = useContext(globalContext)
@@ -8,8 +11,14 @@ const Navbar = () => {
   const handelOut = ()=>{
     logOut()
     .then(() => {
+      swal({
+        title: "Log out success!",
+        text: "",
+        icon: "success",
+        button: "Ok",
+      });
       // Sign-out successful.
-    }).catch((error) => {
+    }).catch(() => {
       // An error happened.
     });
   }
