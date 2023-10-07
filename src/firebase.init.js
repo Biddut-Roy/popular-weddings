@@ -6,17 +6,17 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCxQNIqNbt_pIqeeWm3mTglVPE877YMdUY",
-  authDomain: "wedding-event--management.firebaseapp.com",
-  projectId: "wedding-event--management",
-  storageBucket: "wedding-event--management.appspot.com",
-  messagingSenderId: "278787067551",
-  appId: "1:278787067551:web:da3e448ef63116916d9caa"
+  apiKey:import.meta.env.VITE_APIKEY,
+  authDomain:import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-export default auth ;
+export default auth
 
