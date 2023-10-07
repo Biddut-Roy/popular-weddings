@@ -33,19 +33,14 @@ const GlobalContex = ({ children }) => {
   };
 
   useEffect(()=>{
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      if (currentUser) {
-          setUser(currentUser)
-          setLoder(false)
-      } else {
-        // User is signed out
-    // ..
-      }
-    });
-    return()=>{
-      unsubscribe();
-    }
-  },[user])
+    const unsubscribe =  onAuthStateChanged(auth , createUser=>{
+         setUser(createUser)
+         setLoder(false)
+     })
+     return ()=>{
+         unsubscribe();
+     }
+ },[])
 
   const authinfo = { user, signUp, signIn , logOut ,signInGoogle , loder };
 

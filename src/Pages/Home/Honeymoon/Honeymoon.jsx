@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Honeymoon = () => {
     const [honeymoonData, setHoneymoonData] = useState([]);
@@ -10,9 +13,16 @@ const Honeymoon = () => {
             .catch(error => console.error("Error fetching data:", error));
     }, []);
 
+    useEffect(() => {
+      AOS.init({
+        duration: 2000,
+        easing: 'ease-in-out',
+      });
+    }, []);
+
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 w-10/12 mx-auto gap-10 my-10">
+        <div data-aos="zoom-in-down" className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 w-10/12 mx-auto gap-10 my-10">
           {honeymoonData.map((item) => (
             <div key={item.id} className="flex-wrap"> 
               <div className="card glass flex">

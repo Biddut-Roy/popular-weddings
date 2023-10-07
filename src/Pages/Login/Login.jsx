@@ -11,7 +11,6 @@ const Login = () => {
   const { signIn ,signInGoogle }= useContext(globalContext)
   const location = useLocation();
   const navigate = useNavigate();
-  console.log(location);
 
   const handelLogin = (e)=>{
 

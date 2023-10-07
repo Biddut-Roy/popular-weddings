@@ -7,6 +7,7 @@ import swal from 'sweetalert';
 
 const Navbar = () => {
   const { user , logOut } = useContext(globalContext)
+  console.log(user);
 
   const handelOut = ()=>{
     logOut()
@@ -50,8 +51,11 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end space-x-2">
-    <div className=" w-10 h-10 rounded-full border-2 border-red-800 ">
-         <img src="https://i.ibb.co/mTk3cfk/P.png" alt="profile-img" />
+    <div className="hidden md:flex lg:flex">
+         <p>{user&& user.displayName}</p>
+    </div>
+    <div className=" w-10 h-10  ">
+         <img className=" rounded-full" src={user? user.photoURL:"https://i.ibb.co/mTk3cfk/P.png"} alt="profile-img" />
     </div>
     {
       user?
