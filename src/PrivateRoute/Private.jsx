@@ -8,8 +8,8 @@ const Private = ({ children }) => {
     const location = useLocation();
     const { user , loder } = useContext(globalContext);
     if (loder) {
-        <div className=" text-center">
-            <span className="loading loading-dots loading-lg"></span>
+        return <div className=" flex justify-center mt-16">
+            <span className="loading loading-spinner loading-lg"></span>
         </div>
     }
     if(user){
