@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import Services from "./Services/Services";
 import Gallary from "./WeddingGallary/Gallary";
+import Honeymoon from "./Honeymoon/Honeymoon";
 
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
             <div className=" my-10">
                               <h1 className=" font-bold text-center lg:text-4xl">Our Wedding Services</h1>
             </div>
-            <div className="grid grid-cols-1  md: grid-cols-2 lg:grid-cols-2 w-2/3 mx-auto gap-10 my-10">
+            <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 w-2/3 mx-auto gap-10 my-10">
                 
                 {
                     data?.map(data =><Services key={data.id} data={data}></Services>)
@@ -28,10 +29,10 @@ const Home = () => {
                 <Gallary></Gallary>
             </div>
             <div className=" my-10">
-                              <h1 className=" font-bold text-center lg:text-4xl"> honeymoon package</h1>
+                              <h1 className=" font-bold text-center lg:text-4xl"> Honeymoon package</h1>
             </div>
             <div>
-                <Gallary></Gallary>
+                <Honeymoon></Honeymoon>
             </div>
         </div>
     );

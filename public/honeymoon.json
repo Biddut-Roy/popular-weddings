@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "photo": "https://i.ibb.co/Ws9f344/New-York-NY-honeymoon.jpg",
+      "package": "Standard Package",
+      "Prices": 1909.99,
+      "location": "New York, NY",
+      "honeymoon": false
+    },
+    {
+      "id": 2,
+      "photo": "https://i.ibb.co/vkntmfr/Maui-Hawaii-honeymoon.jpg",
+      "package": "Honeymoon Getaway",
+      "Prices": 5099.99,
+      "location": "Maui, Hawaii",
+      "honeymoon": true
+    },
+    {
+      "id": 3,
+      "photo": "https://i.ibb.co/SrqVj99/Bora-Bora-French-Polynesia-honeymoon.jpg",
+      "package": "Deluxe Honeymoon",
+      "Prices": 7909.99,
+      "location": "Bora Bora, French Polynesia",
+      "honeymoon": true
+    }
+  ]
+  
