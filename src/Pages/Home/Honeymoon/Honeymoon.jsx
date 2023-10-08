@@ -7,7 +7,7 @@ const Honeymoon = () => {
     const [honeymoonData, setHoneymoonData] = useState([]);
     
     useEffect(() => {
-        fetch("../../../../public/honeymoon.json")
+        fetch("../../../../honeymoon.json")
             .then(res => res.json())
             .then(data => setHoneymoonData(data))
             .catch(error => console.error("Error fetching data:", error));
